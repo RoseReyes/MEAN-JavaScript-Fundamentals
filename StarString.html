@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    // //Print * based on the given number
+    function draw_stars(num){
+        for (var j = 1; j <= num; j++) 
+        {
+            let row = '*' ;
+            console.log(row);
+        }
+    }
+    draw_stars(10)
+
+    // Print * based on the elements inside the array
+    function draw_stars(arr)
+        {
+            for (var j = 0; j < arr.length; j++) 
+            {
+                console.log(Array(arr[j]).fill('*'));
+            }
+        }
+        draw_stars([10,15,4]);
+
+
+    //  //Print * based on the given array
+        function draw_stars(arr)
+        {
+            for (var j = 0; j < arr.length; j++) 
+            {
+                if(typeof arr[j] === 'number')
+                {
+                    console.log(Array(arr[j]).fill('*'));
+                }
+                else {
+                    console.log(Array(arr[j].length).fill(arr[j][0].toLowerCase()));
+
+                }
+            }
+        }
+        draw_stars(["tom","roseme",1,2,4]);
+
+
+
+    
+    </script>
+</body>
+</html>
