@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Students</h1>
+    <ul id="main">
+    </ul> 
+    <h1 id ="super">
+        
+    </h1>
+    <script>
+        function appendList(array, id)
+        {
+            for (let index = 0; index < array.length; index++) {
+                let new_list = document.createElement("li");
+                new_list.innerHTML = array[index];
+                document.getElementById(id).appendChild(new_list);
+            }
+        };
+        let students = ["Jeff", "Jenny", "Javier", "Joslyn", "Joe", "Jane", "Django"];
+        let target_id = "main";
+        appendList(students, target_id);
+
+        function super_appendList(arr, element, id){
+            for (let i = 0; i < arr.length; i++){
+                let new_item = document.createElement(element);
+                new_item.innerHTML = arr[i];
+                document.getElementById(id).appendChild(new_item);
+            }
+            };
+        let arr = ["Hello", "my", "name", "is", "Rose"];
+        let t_id = "super";
+        let elem = "p";
+        super_appendList(arr, elem, t_id);
+    </script>   
+    </script>
+</body>
+</html>
