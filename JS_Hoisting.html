@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Exercise (JavaScript Hoisting) : Predict the output of the following: </h3>
+
+    ***************************
+    <p> console.log(hello);</p>
+    <p>var hello = 'world';</p>
+    <p>result: undefined</p>
+    ***************************
+
+    ***************************
+    <p>var needle = 'haystack';</p>
+    <p>test();</p>
+    
+    <p>function test(){</p>
+	<p>var needle = 'magnet';</p>
+	<p>console.log(needle);</p>
+    <p>}</p>
+    <p>Result: magnet</p>
+    ***************************
+
+    ***************************
+    <p>var needle = 'super cool';</p>
+    <p>function print(){</p>
+	<p> brendan = 'magnet';</p>
+	<p>console.log(brendan);</p>
+    <p>}</p>
+    <p>console.log(brendan);</p>
+    
+    <p>Result: super cool</p>
+    ***************************
+
+    ***************************
+    <p>var food = 'chicken';</p>
+    <p>console.log(food);</p>
+    <p>eat();</p>
+    <p>function eat(){</p>
+	<p> food = 'half-chicken';</p>
+	<p>console.log(brendan);</p>
+    <p>console.log(food);</p>
+    <p>var food = 'gone';</p>
+    <p>}</p>
+    
+    <p>Result: chicken</p>
+    <p>Result: half - chicken</p>
+    ***************************
+
+    ***************************
+    mean();
+    console.log(food);
+    var mean = function() {
+        food = "chicken";
+        console.log(food);
+        var food = "fish";
+        console.log(food);
+    }
+    console.log(food);
+    <p>Result: Error: mean() is not a function</p>
+    ***************************
+
+    ***************************
+    console.log(genre);
+    var genre = "disco";
+    rewind();
+    function rewind() {
+        genre = "rock";
+        console.log(genre);
+        var genre = "r&b";
+        console.log(genre);
+    }
+    console.log(genre);
+    <p>Results: undefined</p>
+    <p>rock</p>
+    <p>r&b</p>
+    <p>disco</p>
+    ***************************
+
+    ***************************
+    dojo = "san jose";
+    console.log(dojo);
+    learn();
+    function learn() {
+        dojo = "seattle";
+        console.log(dojo);
+        var dojo = "burbank";
+        console.log(dojo);
+    }
+    console.log(dojo);
+    <p>Results: San Jose</p>
+    <p>Seattle</p>
+    <p>Burbank</p>
+    <p>San Jose</p>
+    ***************************
+
+
+
+
+
+</body>
+</html>
