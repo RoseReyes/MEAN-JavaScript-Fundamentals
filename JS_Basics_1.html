@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    //Display pushed elements in array object
+    let x = [];
+    x.push("coding");
+    x.push("dojo");
+    x.push("rocks");
+    console.log(x);
+
+    const y = [];
+    y.push(88);
+    console.log(y);
+
+
+    //Display numbers except the last
+    let z = [9, 10, 6, 5, -1, 20, 13, 2];
+    let display = 0;
+    for (let index = 0; index < z.length; index++) {
+        display = z[index]; 
+        if(z[index] == 2) { continue }
+        console.log(z[index]);
+    }
+
+    //Print the lenght of all names in the array
+    let names = ['Kadie', 'Joe', 'Fritz', 'Pierre', 'Alphonso'];
+    let element = 0;
+    for (let index = 0; index < names.length; index++) {
+         element = names[index].length;
+         console.log(element);
+    }
+    
+    //Print names with length = 5
+    let names = ['Kadie', 'Joe', 'Fritz', 'Pierre', 'Alphonso'];
+    let element = 0;
+    for (let index = 0; index < names.length; index++) {
+         element = names[index].length;
+         if(element != 5){ continue }
+         console.log(names[index]);
+    }
+
+    //Function that return uppercase string
+    function yell (str){
+        return str.toUpperCase();
+    }
+    var displayStr = yell("dojo");
+    console.log(displayStr);
+
+
+    </script>
+</head>
+<body>
+   
+
+</body>
+</html>
