@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 20px auto;
+}
+#question{
+    padding: 50px;
+    margin: 15px;
+    border: double black 1px;
+}
+.losebox{
+    padding-top: 25px;
+}
